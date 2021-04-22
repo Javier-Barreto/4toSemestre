@@ -5,16 +5,28 @@ let proceso = require('./proceso')
 let ColaP = new cola;
 let actual = 0
 let nn=1
-
+let pp = 0
 for(i=1;i<=300;i++)
 {
     if(Math.floor(Math.random()*100<=25))
     {
+        
         let np = new proceso(nn);
-        console.log("Nuevo Proceso creado en el ciclo "+i)
-        console.log("Nuevo Proceso numero: "+np.numeroi+", con duracion de: "+np.duracion+" ciclos.")
-        console.log('')
         ColaP.nuevo(np)
+
+        if(pp==0)
+        {
+            pp++
+            console.log("Se creó el primer proceso en el ciclo: "+i)
+            console.log("Nuevo Proceso numero: "+np.numeroi+", con duracion de: "+np.duracion+" ciclos.")
+            console.log('')
+        }
+        else
+        {
+            console.log("Nuevo proceso creado en el ciclo: "+i)
+            console.log("Nuevo Proceso numero: "+np.numeroi+", con duracion de: "+np.duracion+" ciclos.")
+            console.log('')
+        }
         nn++
     }
 
