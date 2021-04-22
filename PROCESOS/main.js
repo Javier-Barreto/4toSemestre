@@ -8,7 +8,7 @@ let nn=1
 
 for(i=1;i<=300;i++)
 {
-    if(Math.random()*100<=25)
+    if(Math.floor(Math.random()*100<=25))
     {
         let np = new proceso(nn);
         console.log("Nuevo Proceso creado en el ciclo "+i)
