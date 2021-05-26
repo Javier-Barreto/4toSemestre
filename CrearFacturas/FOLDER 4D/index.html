@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div>
+        <form>
+            <label for='txtname'>
+                Nombre:<input type="text" id="txtname">
+                <br>
+            </label>
+            <label for='txtquantity'>
+                Quantity:<input type="number" id="txtquantity">
+                <br>
+            </label>
+            <label for='txtcost'>
+                Cost:<input type="number" id="txtcost">
+                <br>
+            </label>
+            <button type="button" id="btnadd">Agregar</button>
+        </form>
+    </div>
+    <div>
+        <form>
+            <h3>Lista de Pr oductos</h3>
+            <button type="button" id="btnGetProducts">Obtener P</button>
+            <select id='mnuproducts'>
+
+            </select>
+            <label for="txtinvquantity">
+                Cantidad:<input type="text" id="txtinvquantity" value="0">
+                <br>
+            </label>
+            <button type="button" id="btnAdd2Invoice">Incluir</button>
+            <br>
+            <br>
+            <label for="rfcSaveInvoice">
+                RFC:<input type="text" id="rfcSaveInvoice">
+            </label>
+            <button type="button" id="btnSaveInvoice">Guardar Factura</button>
+            <div id="detallefactura"></div>
+        </form>
+    </div>
+    <script src="./JS/app.js"></script>
+</body>
