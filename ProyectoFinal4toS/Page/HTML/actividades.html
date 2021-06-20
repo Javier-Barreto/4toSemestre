@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EGJB - Avance Actividades</title>
+        <link rel="stylesheet" href="../CSS/actividades.css">
+    </head>
+    <body onload="alcargar()">
+        <header>
+            <div class="headerbox">
+                <ul>
+                    <a href="./index.html"><li>Inicio</li></a>
+                    <a href="./nactividades.html"><li>Agregar actividad</li></a>
+                </ul>
+            </div>
+        </header>
+
+        <div class="divactividades">
+
+            <div class="apendientesbox">
+                <h3>Actividades Pendientes</h3>
+                <div id="vap"></div>
+            </div>
+            
+            <div class="acompletadasbox">
+                <h3>Actividades Completadas</h3>
+                <div id="vac"></div>
+            </div>
+        </div>
+        
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+            </div>
+        </div>
+    </body>
+    <script src="../JS/actividades.js"></script>
+</html>

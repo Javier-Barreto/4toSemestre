@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Escuela General Juan Benites</title>
+        <link rel="stylesheet" href="../CSS/nactividades.css">
+    </head>
+    <body>
+        <header>
+            <div class="headerbox">
+                <ul>
+                    <a href="./index.html"><li>Inicio</li></a>
+                    <a href="./actividades.html"><li>Avance de las actividades</li></a>
+                </ul>
+            </div>
+        </header>
+
+        <div class="divnactividad">
+            <h1>Agregar nueva actividad</h1>
+
+            <form>
+                <label for='txtname'>
+                    Nombre:<input type="text" id="txtname">
+                    <br>
+                </label>
+
+                <label for='txtdsc'>
+                    Descripcion:<input type="text" id="txtdsc">
+                    <br>
+                </label>
+
+                <label for='txtdate'>
+                    Fecha de entrega:<input type="date" id="txtdate">
+                    <br>
+                </label>
+
+                <label for='txtvalue'>
+                    Valor:<input type="number" id="txtvalue">
+                    <br>
+                </label>
+                <button type="button" id="AddActivity">Agregar actividad</button>
+            </form>
+        </div>
+    <script src="../JS/nactividades.js"></script>
+    </body>
+</html>
